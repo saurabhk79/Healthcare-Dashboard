@@ -23,7 +23,7 @@
   position: relative;
 }
 
-/* .calendarview::after {
+.calendarview::after {
   content: "";
   position: absolute;
   top: 0;
@@ -32,7 +32,7 @@
   bottom: 0;
   background: linear-gradient( to right ,#ffffff00, #f2f4f87b);
   z-index: 100;
-} */
+}
 
 .dayCard {
   min-width: 45px;

@@ -1,0 +1,74 @@
+.activityChart {
+  padding: 16px;
+  background-color: var(--light-gray);
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
+.titleBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chartWrapper {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  align-items: flex-end;
+}
+
+.container {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  height: 80px;
+  padding: 5px;
+}
+
+.line {
+  background-color: black;
+  width: 4px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.line1Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.line1Segment {
+  height: 40px;
+}
+
+.line2 {
+  height: 40px;
+  align-self: center;
+}
+
+.line3Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40px;
+  align-self: center;
+  padding-top: 8px;
+}
+
+.line3Segment {
+  height: 20px;
+}
+
+.line4 {
+  height: 20px;
+  align-self: flex-end;
+}
+
+.days {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}

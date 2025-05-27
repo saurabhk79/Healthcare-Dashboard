@@ -1,5 +1,5 @@
 import { Menu, User } from "lucide-react";
-import styles from "./profile.module.css";
+import styles from "../styles/profile.module.css";
 
 const Profile = () => {
   return (

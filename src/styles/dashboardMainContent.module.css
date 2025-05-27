@@ -1,7 +1,7 @@
 .dashboardContent {
   display: flex;
   color: var(--dark-blue);
-  width: calc(100vw - 250px);
+  width: calc(100vw - 220px);
 }
 
 .diagrams {
@@ -69,6 +69,7 @@
   height: 8px;
   border-radius: 4px;
   overflow: hidden;
+  margin-top: 12px;
 }
 
 .progress {

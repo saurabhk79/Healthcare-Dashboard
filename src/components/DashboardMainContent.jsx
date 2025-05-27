@@ -1,37 +1,17 @@
-import styles from "./dashboardMainContent.module.css";
-import Header from "../Header";
+import styles from "../styles/dashboardMainContent.module.css";
+import Header from "./Header";
 import { ArrowRight, ChevronDown } from "lucide-react";
-import Anatomical from "../Anatomical";
-import UpcomingScheduleView from "../UpcomingScheduleView";
-import CalendarView from "../CalendarView";
-import Profile from "../Profile";
+import Anatomical from "./Anatomical";
+import UpcomingScheduleView from "./UpcomingScheduleView";
+import CalendarView from "./CalendarView";
+import Profile from "./Profile";
 // import ActivityChart from "../ActivityChart";
 
-const DashboardMainContent = () => {
-  const healthCards = [
-    {
-      title: "Lungs",
-      icon: "🫁",
-      date: "26 Oct 2021",
-      progress: "",
-      progressPaint: "#b44e4f",
-    },
-    {
-      title: "Teeth",
-      icon: "🦷",
-      date: "26 Oct 2021",
-      progress: "",
-      progressPaint: "#7ed1c2",
-    },
-    {
-      title: "Bone",
-      icon: "🦴",
-      date: "26 Oct 2021",
-      progress: "",
-      progressPaint: "#ff7e5f",
-    },
-  ];
+import { calendar, schedule } from "../data/appointment";
+import { healthCards, chartData } from "../data/healthData";
+import ActivityChart from "./ActivityChart";
 
+const DashboardMainContent = () => {
   return (
     <div className={styles.dashboardContent}>
       <div className={styles.diagrams}>
@@ -68,20 +48,20 @@ const DashboardMainContent = () => {
               })}
             </div>
 
-            <small className={styles.details}>
-              Details <ArrowRight size={16} />
-            </small>
+            <div style={{ textAlign: "right", fontSize: "12px" }}>
+              Details <ArrowRight size={12} />
+            </div>
           </div>
-        </div>
 
-        {/* <ActivityChart /> */}
+        </div>
+          <ActivityChart chartData={chartData} />
       </div>
       <div className={styles.dateTiming}>
         <div className={styles.profile}>
           <Profile />
         </div>
-        <CalendarView />
-        <UpcomingScheduleView />
+        <CalendarView calendar={calendar} />
+        <UpcomingScheduleView schedule={schedule} />
       </div>
     </div>
   );

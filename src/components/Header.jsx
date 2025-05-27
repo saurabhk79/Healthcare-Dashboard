@@ -1,8 +1,8 @@
 import { Bell, Menu, SearchIcon, User } from "lucide-react";
 import React from "react";
-import Profile from "../Profile";
-import Logo from "../Logo";
-import styles from "./header.module.css";
+import Profile from "./Profile";
+import Logo from "./Logo";
+import styles from "../styles/header.module.css";
 
 const Header = () => {
   return (

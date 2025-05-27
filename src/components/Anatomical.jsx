@@ -1,6 +1,6 @@
 import { BicepsFlexed, Heart, ZoomIn } from "lucide-react";
 import React from "react";
-import styles from './anatomical.module.css';
+import styles from '../styles/anatomical.module.css';
 
 const Anatomical = () => {
   return (
@@ -9,10 +9,10 @@ const Anatomical = () => {
       <ZoomIn className={styles.zoomin} />
 
       <div className={styles.anatomicalCardA}>
-        <Heart /> Healthy Heart
+        ❤️ Healthy Heart
       </div>
       <div className={styles.anatomicalCardB}>
-        <BicepsFlexed /> Healthy Leg
+        💪🏻 Healthy Leg
       </div>
     </div>
   );
