@@ -1,0 +1,22 @@
+.profile {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.user_icon {
+  padding: 4px 8px;
+  color: white;
+  background-color: var(--cyan-accent);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.plus_icon {
+  padding: 4px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: large;
+  background-color: var(--primary-blue);
+}

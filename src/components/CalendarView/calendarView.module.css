@@ -1,0 +1,115 @@
+.container {
+  padding: 16px;
+  color: var(--dark-blue) !important;
+}
+
+.calendarbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.icons {
+  display: flex;
+  gap: 6px;
+}
+
+.calendarview {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+/* .calendarview::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient( to right ,#ffffff00, #f2f4f87b);
+  z-index: 100;
+} */
+
+.dayCard {
+  min-width: 60px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 6px;
+}
+
+.dayCard small {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.dayCard h2 {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.dayCard ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dayCard li {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.booked {
+    background-color: var(--primary-blue);
+    color: white;
+  border-radius: 6px;
+
+}
+
+.selected {
+  background-color: var(--soft-purple);
+}
+
+.appointments {
+  display: flex;
+  gap: 12px;
+}
+
+.appointment {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: var(--soft-purple);
+}
+
+.selectedAppointment {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+.appointmentTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.appointment h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.appointment small {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.appointment p {
+  font-size: 13px;
+  margin: 0;
+}

@@ -1,0 +1,48 @@
+.scheduleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+
+.dayBlock {
+  display: flex;
+  gap: 16px;
+}
+
+.dayLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7e8aa5;
+}
+
+.card {
+  background-color: #e8ebfb;
+  border-radius: 14px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: fit-content;
+  min-width: 220px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e1e1e;
+}
+
+.card small {
+  font-size: 12px;
+  color: #6b7280;
+}

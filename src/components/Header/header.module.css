@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 14px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid var(--light-gray);
+}
+
+.searchBar svg {
+  color: var(--muted-gray);
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  flex-grow: 1;
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header .logo {
+    display: none;
+  }
+
+  .header .profile {
+    display: none;
+  }
+
+  .searchBar {
+    max-width: 100%;
+  }
+}

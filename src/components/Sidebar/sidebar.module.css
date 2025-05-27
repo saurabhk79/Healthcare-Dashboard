@@ -1,0 +1,75 @@
+.sidemenu {
+  min-width: 250px;
+  width: 250px;
+  height: 100vh;
+  background-color: var(--light-gray);
+  border-right: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+}
+.sideoptions {
+  margin: 48px auto;
+}
+
+.sideoptions small {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted-gray);
+  margin-top: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sideoptions ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+  
+}
+
+.sideoptions li {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--muted-gray);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sideoptions li svg {
+  stroke-width: 1.5;
+  width: 18px;
+  height: 18px;
+  color: #5f5f6f;
+}
+
+.sideoptions .selected {
+  color: var(--dark-blue);
+}
+
+.sideoptions .selected svg {
+  color: var(--dark-blue);
+}
+
+.sidemenu .settings{
+  padding: 1rem 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin: 48px auto;
+  color: var(--muted-gray);
+
+}
+
+.sidemenu .settingssvg {
+  margin-right: 0.5rem;
+  color: var(--muted-gray);
+}

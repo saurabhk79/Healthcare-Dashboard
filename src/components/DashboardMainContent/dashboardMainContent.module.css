@@ -1,0 +1,88 @@
+.dashboardContent {
+  display: flex;
+  color: var(--dark-blue);
+}
+
+.diagrams {
+  padding: 0 32px;
+  padding-top: 48px;
+}
+
+.dashboardTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.dashboardDiagram {
+  display: flex;
+  gap: 16px;
+  height: 500px;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 24px;
+  margin-left: 0;
+  width: 100%;
+}
+
+.card {
+  background: var(--soft-purple);
+  padding: 16px;
+  border-radius: 10px;
+  width: 200px;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  color: #f75c4e;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 13px;
+  color: #a0aec0;
+  margin: 8px 0;
+}
+
+.progressBar {
+  background: #ffe6e6;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 65%;
+  height: 100%;
+}
+
+.dateTiming {
+  background-color: var(--light-gray);
+  padding: 0 32px;
+  padding-top: 48px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}

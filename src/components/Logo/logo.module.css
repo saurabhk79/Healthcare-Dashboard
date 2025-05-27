@@ -1,0 +1,8 @@
+.logo {
+    color: var(--cyan-accent);
+    font-weight: 700;
+    font-size: larger;
+}
+.logo_ex {
+    color: var(--dark-blue);
+}

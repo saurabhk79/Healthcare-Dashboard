@@ -1,0 +1,59 @@
+.chartWrapper {
+  display: flex;
+  gap: 24px;
+  padding: 16px;
+  align-items: flex-end;
+}
+
+.barGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140px;
+  position: relative;
+}
+
+/* BAR STYLES */
+.bar {
+  width: 8px;
+  height: 20px;
+  background-color: #d1d5db; /* gray for opened */
+  border-radius: 4px;
+}
+
+/* colored bars */
+.colored {
+  background-color: #3b82f6;
+}
+
+/* first block: top and bottom bar */
+.topBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+/* second block: middle aligned */
+.middleOne {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+/* third block: lower middle with 2 stacked bars */
+.middleTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  margin: 8px 0 12px;
+}
+
+/* fourth block: bottom bar */
+.bottomOne {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
