@@ -1,8 +1,11 @@
+/* mainly related to dashboard content */
 .dashboardContent {
   display: flex;
   color: var(--dark-blue);
   width: calc(100vw - 220px);
 }
+
+/* diagrams for the dashboard */
 
 .diagrams {
   padding: 0 32px;
@@ -14,6 +17,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 16px 0;
+  width: 100%;
 }
 
 .dashboardDiagram {
@@ -22,7 +26,8 @@
   height: 420px;
 }
 
-.cardWrapper {
+/* here is the health card css */
+.healthCardWrapper {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -31,7 +36,7 @@
   width: 100%;
 }
 
-.card {
+.healthCard {
   background: var(--light-gray);
   padding: 16px;
   border-radius: 10px;
@@ -49,10 +54,6 @@
   gap: 10px;
 }
 
-.icon {
-  color: #f75c4e;
-}
-
 .title {
   font-size: 16px;
   font-weight: 600;
@@ -60,19 +61,18 @@
 
 .date {
   font-size: 13px;
-  color: #a0aec0;
+  color: var(--muted-gray);
   margin: 8px 0;
 }
 
 .progressBar {
-  background: #ffe6e6;
+  background: var(--soft-purple);
   height: 8px;
   border-radius: 4px;
-  overflow: hidden;
   margin-top: 12px;
 }
 
-.progress {
+.progressDone {
   width: 65%;
   height: 100%;
 }
@@ -87,4 +87,29 @@
   display: flex;
   align-items: center;
   justify-content: end;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboardContent {
+    display: block;
+  }
+
+  .dateTiming {
+    width: 92vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .diagrams {
+    width: 92vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile {
+    display: none;
+  }
 }

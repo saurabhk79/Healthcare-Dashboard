@@ -4,21 +4,23 @@
   gap: 1.5rem;
 }
 
-.heading {
+.scheduleHeading {
   font-size: 18px;
   font-weight: 600;
 }
 
-
-.dayBlock {
-  display: flex;
-  gap: 16px;
+.scheduleDay {
+  color: var(--muted-gray);
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
-.dayLabel {
+.cardWrapper {
   font-size: 14px;
   font-weight: 500;
-  color: #7e8aa5;
+  color: var(--soft-purple);
+  display: flex;
+  gap: 12px;
 }
 
 .card {
@@ -32,16 +34,16 @@
   min-width: 220px;
 }
 
-.cardHeader {
+.cardTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
   font-weight: 500;
-  color: #1e1e1e;
+  color: var(--dark-blue);
 }
 
 .card small {
   font-size: 12px;
-  color: #6b7280;
+  color: var(--muted-gray);
 }

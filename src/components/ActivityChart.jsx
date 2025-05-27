@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../styles/activityChart.module.css";
 
-
 const ActivityChart = ({chartData}) => {
   const colored = (status) => {
     let result = "";
@@ -25,39 +24,39 @@ const ActivityChart = ({chartData}) => {
         <h2>Activity</h2>
         <small>3 appointment on this week</small>
       </div>
-      <div className={styles.chartWrapper}>
-        {chartData.map((group, idx) => (
-          <div className={styles.container}>
-            <div className={styles.line1Container}>
+      <div className={styles.activityChartWrapper}>
+        {chartData.map((ch, idx) => (
+          <div className={styles.dayChartBlock}>
+            <div className={styles.line1}>
               <div
-                className={`${styles.line} ${styles.line1Segment}`}
-                style={{ background: colored(group[0].statusA) }}
+                className={`${styles.line} ${styles.line1Partial}`}
+                style={{ background: colored(ch[0].statusA) }}
               ></div>
               <div
-                className={`${styles.line} ${styles.line1Segment}`}
-                style={{ background: colored(group[0].statusB) }}
+                className={`${styles.line} ${styles.line1Partial}`}
+                style={{ background: colored(ch[0].statusB) }}
               ></div>
             </div>
 
             <div
               className={`${styles.line} ${styles.line2}`}
-              style={{ background: colored(group[1].status) }}
+              style={{ background: colored(ch[1].status) }}
             ></div>
 
-            <div className={styles.line3Container}>
+            <div className={styles.line3}>
               <div
-                className={`${styles.line} ${styles.line3Segment}`}
-                style={{ background: colored(group[2].statusA) }}
+                className={`${styles.line} ${styles.line3Partial}`}
+                style={{ background: colored(ch[2].statusA) }}
               ></div>
               <div
-                className={`${styles.line} ${styles.line3Segment}`}
-                style={{ background: colored(group[2].statusB) }}
+                className={`${styles.line} ${styles.line3Partial}`}
+                style={{ background: colored(ch[2].statusB) }}
               ></div>
             </div>
 
             <div
               className={`${styles.line} ${styles.line4}`}
-              style={{ background: colored(group[3].status) }}
+              style={{ background: colored(ch[3].status) }}
             ></div>
           </div>
         ))}

@@ -5,11 +5,10 @@ import Anatomical from "./Anatomical";
 import UpcomingScheduleView from "./UpcomingScheduleView";
 import CalendarView from "./CalendarView";
 import Profile from "./Profile";
-// import ActivityChart from "../ActivityChart";
+import ActivityChart from "./ActivityChart";
 
 import { calendar, schedule } from "../data/appointment";
 import { healthCards, chartData } from "../data/healthData";
-import ActivityChart from "./ActivityChart";
 
 const DashboardMainContent = () => {
   return (
@@ -26,20 +25,20 @@ const DashboardMainContent = () => {
         <div className={styles.dashboardDiagram}>
           <Anatomical />
           <div>
-            <div className={styles.cardWrapper}>
+            <div className={styles.healthCardWrapper}>
               {healthCards.map((card, idx) => {
                 return (
-                  <div className={styles.card} key={idx}>
+                  <div className={styles.healthCard} key={idx}>
                     <div>
                       <div className={styles.header}>
-                        <span className={styles.icon}>{card.icon}</span>
+                        <span>{card.icon}</span>
                         <span className={styles.title}>{card.title}</span>
                       </div>
                       <p className={styles.date}>Date: {card.date}</p>
                     </div>
                     <div className={styles.progressBar}>
                       <div
-                        className={styles.progress}
+                        className={styles.progressDone}
                         style={{ background: card.progressPaint }}
                       ></div>
                     </div>
@@ -52,9 +51,8 @@ const DashboardMainContent = () => {
               Details <ArrowRight size={12} />
             </div>
           </div>
-
         </div>
-          <ActivityChart chartData={chartData} />
+        <ActivityChart chartData={chartData} />
       </div>
       <div className={styles.dateTiming}>
         <div className={styles.profile}>

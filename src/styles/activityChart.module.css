@@ -1,7 +1,7 @@
 .activityChart {
   padding: 16px;
   background-color: var(--light-gray);
-  margin-top: 40px;
+  margin: 40px 0;
   border-radius: 12px;
 }
 
@@ -11,14 +11,18 @@
   justify-content: space-between;
 }
 
-.chartWrapper {
+.titleBar small {
+  color: var(--muted-gray);
+}
+
+.activityChartWrapper {
   display: flex;
   gap: 8px;
   padding: 16px;
   align-items: flex-end;
 }
 
-.container {
+.dayChartBlock {
   display: flex;
   gap: 8px;
   align-items: flex-end;
@@ -33,14 +37,14 @@
   flex-shrink: 0;
 }
 
-.line1Container {
+.line1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 80px;
 }
 
-.line1Segment {
+.line1Partial {
   height: 40px;
 }
 
@@ -49,7 +53,7 @@
   align-self: center;
 }
 
-.line3Container {
+.line3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,7 +62,7 @@
   padding-top: 8px;
 }
 
-.line3Segment {
+.line3Partial {
   height: 20px;
 }
 

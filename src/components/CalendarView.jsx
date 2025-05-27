@@ -4,7 +4,7 @@ import React from "react";
 
 const CalendarView = ({calendar}) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.calendarMain}>
       <div className={styles.calendarbar}>
         <h4>October 2023</h4>
         <div className={styles.icons}>
@@ -17,7 +17,7 @@ const CalendarView = ({calendar}) => {
         {calendar.map((cal, idx) => (
           <div
             key={idx}
-            className={`${styles.dayCard} ${
+            className={`${styles.calendarCard} ${
               cal.selected ? styles.selected : ""
             }`}
           >
@@ -37,17 +37,17 @@ const CalendarView = ({calendar}) => {
         ))}
       </div>
 
-      <div className={styles.appointments}>
-        <div className={`${styles.appointment} ${styles.selectedAppointment}`}>
-          <div className={styles.appointmentTop}>
+      <div className={styles.schedule}>
+        <div className={`${styles.scheduleCard} ${styles.selectedScheduleCard}`}>
+          <div className={styles.card}>
             <h4>Dentist</h4>
             <div>🦷</div>
           </div>
           <small>09:00-11:00</small>
           <p>Dr. Cameron Williamson</p>
         </div>
-        <div className={styles.appointment}>
-          <div className={styles.appointmentTop}>
+        <div className={styles.scheduleCard}>
+          <div className={styles.card}>
             <h4>Physiotherapy Appointment</h4>
             <div>💪🏻</div>
           </div>
