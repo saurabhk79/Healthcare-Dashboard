@@ -1,6 +1,7 @@
 .dashboardContent {
   display: flex;
   color: var(--dark-blue);
+  width: calc(100vw - 250px);
 }
 
 .diagrams {
@@ -18,7 +19,7 @@
 .dashboardDiagram {
   display: flex;
   gap: 16px;
-  height: 500px;
+  height: 420px;
 }
 
 .cardWrapper {
@@ -31,10 +32,10 @@
 }
 
 .card {
-  background: var(--soft-purple);
+  background: var(--light-gray);
   padding: 16px;
   border-radius: 10px;
-  width: 200px;
+  width: 140px;
   flex-grow: 1;
 
   display: flex;

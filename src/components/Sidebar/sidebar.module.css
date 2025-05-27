@@ -1,6 +1,6 @@
 .sidemenu {
-  min-width: 250px;
-  width: 250px;
+  min-width: 220px;
+  width: 220px;
   height: 100vh;
   background-color: var(--light-gray);
   border-right: 1px solid #eaeaea;

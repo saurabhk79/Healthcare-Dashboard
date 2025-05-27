@@ -1,6 +1,6 @@
 import styles from "./dashboardMainContent.module.css";
 import Header from "../Header";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import Anatomical from "../Anatomical";
 import UpcomingScheduleView from "../UpcomingScheduleView";
 import CalendarView from "../CalendarView";
@@ -45,26 +45,32 @@ const DashboardMainContent = () => {
 
         <div className={styles.dashboardDiagram}>
           <Anatomical />
-          <div className={styles.cardWrapper}>
-            {healthCards.map((card, idx) => {
-              return (
-                <div className={styles.card} key={idx}>
-                  <div>
-                    <div className={styles.header}>
-                      <span className={styles.icon}>{card.icon}</span>
-                      <span className={styles.title}>{card.title}</span>
+          <div>
+            <div className={styles.cardWrapper}>
+              {healthCards.map((card, idx) => {
+                return (
+                  <div className={styles.card} key={idx}>
+                    <div>
+                      <div className={styles.header}>
+                        <span className={styles.icon}>{card.icon}</span>
+                        <span className={styles.title}>{card.title}</span>
+                      </div>
+                      <p className={styles.date}>Date: {card.date}</p>
                     </div>
-                    <p className={styles.date}>Date: {card.date}</p>
+                    <div className={styles.progressBar}>
+                      <div
+                        className={styles.progress}
+                        style={{ background: card.progressPaint }}
+                      ></div>
+                    </div>
                   </div>
-                  <div className={styles.progressBar}>
-                    <div
-                      className={styles.progress}
-                      style={{ background: card.progressPaint }}
-                    ></div>
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
+
+            <small className={styles.details}>
+              Details <ArrowRight size={16} />
+            </small>
           </div>
         </div>
 

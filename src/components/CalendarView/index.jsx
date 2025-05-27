@@ -172,7 +172,7 @@ const CalendarView = () => {
         <div className={`${styles.appointment} ${styles.selectedAppointment}`}>
           <div className={styles.appointmentTop}>
             <h4>Dentist</h4>
-            <div>-</div>
+            <div>🦷</div>
           </div>
           <small>09:00-11:00</small>
           <p>Dr. Cameron Williamson</p>
@@ -180,7 +180,7 @@ const CalendarView = () => {
         <div className={styles.appointment}>
           <div className={styles.appointmentTop}>
             <h4>Physiotherapy Appointment</h4>
-            <div>-</div>
+            <div>💪🏻</div>
           </div>
           <small>11:00-12:00</small>
           <p>Dr. Kevin Djones</p>

@@ -35,7 +35,7 @@
 } */
 
 .dayCard {
-  min-width: 60px;
+  min-width: 45px;
   border-radius: 8px;
   text-align: center;
   padding: 6px;
@@ -81,7 +81,7 @@
 }
 
 .appointment {
-  padding: 8px 12px;
+  padding: 12px 16px;
   border-radius: 8px;
   background-color: var(--soft-purple);
 }
